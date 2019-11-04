@@ -1,0 +1,99 @@
+/* pages/shiyong/shiyong.wxss */
+/* pages/miaosha/miaosha.wxss */
+.no-more-goods{
+  text-align: center;
+  font-size: 24rpx;
+  padding-bottom:48rpx; 
+  color: #999;
+}
+.bg-color{
+  background-color: white;
+}
+.bg{
+  height: 150px;
+  background-image: url(https://7465-test-4e6095-1258086226.tcb.qcloud.la/%E7%A6%85%E7%BE%BD/banner.png?sign=1a72a45268fba2b7f8b4dd2c0b991cda&t=1564995724);
+  background-repeat: no-repeat;   
+  background-size: 100% 100%;     
+}
+.color{
+  color: #c00000;
+  font-size: 18px;
+  font-weight: bold;
+  font-family: 宋体;
+}
+
+.footer{
+  height: 50px;
+}
+/* 商品card */
+.card-box{
+  height: 130px;
+  margin: 10px 20px;
+  background-color: #FFFFFF;
+  border-radius: 10px;
+}
+.card-img{
+  width: 100px;
+  height: 100px;
+  margin: 10px;
+}
+.card-title{
+  font-size: 13px;
+  overflow:hidden;
+  text-overflow:ellipsis;
+  display:-webkit-box;
+  -webkit-box-orient:vertical;
+  -webkit-line-clamp:1;
+  font-weight: bold;
+}
+.card-text{
+  font-size: 12px;
+  overflow:hidden;
+  text-overflow:ellipsis;
+  display:-webkit-box;
+  -webkit-box-orient:vertical;
+  -webkit-line-clamp:1;
+  color: #888888;
+}
+.card-pic{
+  margin-bottom: 5px;
+}
+.pic-color{
+  color: red;
+  font-weight: bold;
+  font-size: 15px;
+}
+.nopic-color{
+  color:#aaa;
+  text-decoration:line-through;
+}
+.card-stock{
+  color: #888888;
+  font-size: 10px;
+}
+.cu-btn{
+  height: 25px;
+}
+.examine{
+  position: relative;
+  color:#E4007F;
+  top: -10px;
+  font-size: 10px;
+  text-align: right;
+}
+.btn-color{
+  color: #FFFFFF;
+  background-color: #E4007F!important;
+  margin-top: 30px;
+  width: 40px;
+  height: 15px;
+  font-size: 11px;
+  padding: 0;
+}
+.text-color{
+  color: #E4007F;
+}
+.flex-sub{
+  width: 50%;
+  margin: 0 50px!important;
+}

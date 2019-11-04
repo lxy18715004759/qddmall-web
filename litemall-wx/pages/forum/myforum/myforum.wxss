@@ -1,0 +1,96 @@
+/* pages/forum/forum.wxss */
+.text-color {
+  color: #e4007f;
+}
+.text-colorg {
+  color: #999999;
+}
+.flex-sub {
+  width: 50%;
+  margin: 0 50px !important;
+}
+/* 论坛帖 */
+.forum {
+  height: 40px;
+  border-bottom: 1px solid #eeeeee;
+}
+.forum-title {
+  color: #888888;
+  margin-left: 10px;
+  line-height: 40px;
+}
+.forum-content {
+  height: 50px;
+  border-bottom: 1px solid #eeeeee;
+}
+.forum-text {
+  margin-left: 10px;
+  line-height: 50px;
+  width: 200px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+/* 按钮 */
+.forum-btn {
+  width: 100%;
+}
+.new-btn {
+  position: relative;
+  bottom: 0;
+  border-radius: 20px;
+  background-color: #e4007f;
+  color: #ffffff;
+  margin: 10px 20px;
+  width: 90%;
+  height: 40px;
+  line-height: 40px;
+}
+/* 底部栏 */
+.footer {
+  bottom: 0;
+  position: absolute;
+  width: 100%;
+}
+.icon-size {
+  font-size: 60rpx !important;
+}
+/* 浮动按钮 */
+.coupons-float {
+  position: fixed;
+  right: 15rpx;
+  bottom: 120rpx;
+  width: 80rpx;
+  height: 80rpx;
+  background-color: #ffffff;
+  opacity: 0.8;
+  text-align: center;
+  border-radius: 50%;
+  border: 1rpx solid #ddd;
+}
+.forum-float {
+  position: fixed;
+  right: 15rpx;
+  bottom: 180rpx;
+  width: 80rpx;
+  height: 80rpx;
+  background-color: #ffffff;
+  opacity: 0.8;
+  text-align: center;
+  border-radius: 50%;
+  border: 1rpx solid #ddd;
+}
+.forum-float image {
+  width: 60rpx;
+  height: 60rpx;
+  margin-top: 10rpx;
+}
+.coupons-float image {
+  width: 60rpx;
+  height: 60rpx;
+  margin-top: 10rpx;
+}
+.badge {
+  position: relative !important;
+  margin-bottom: 15px;
+}

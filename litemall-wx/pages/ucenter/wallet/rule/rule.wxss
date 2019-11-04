@@ -1,0 +1,19 @@
+/* pages/ucenter/problem/sendtime/sendtime.wxss */
+/* pages/ucenter/about/about.wxss */
+.container{
+  background-image: url(https://7465-test-4e6095-1258086226.tcb.qcloud.la/%E7%A6%85%E7%BE%BD/login.png?sign=0d7af5988ea2897197e122394a18d484&t=1571384991);
+    background-repeat: no-repeat;   
+  background-size: 100% 100%; 
+  height: 90vh;   
+  width: 100%;
+}
+.article-title{
+  text-align: center;
+  margin: 20px 0;
+}
+.article-text{
+  text-indent:2em;
+}
+.size{
+  margin: 10px 20px;
+}

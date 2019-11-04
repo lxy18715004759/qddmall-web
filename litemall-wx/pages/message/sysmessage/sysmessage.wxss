@@ -1,0 +1,4 @@
+/* pages/message/sysmessage/sysmessage.wxss */
+.notice-text{
+  margin: 0 20px;
+}

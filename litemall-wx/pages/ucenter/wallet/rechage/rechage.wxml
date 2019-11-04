@@ -1,0 +1,34 @@
+<cu-custom bgColor="bg-white" isBack="{{true}}"><view slot="backText">返回</view><view slot="content">在线充值</view></cu-custom>
+<view class="container">
+<form bindsubmit="bindSave" report-submit="true" class="size">
+  <!-- 微信充值 -->
+  <view class="flex p-xs margin-bottom-sm mb-sm size">
+    <view class="flex-sub padding-sm margin-xs radius">
+      充值方式
+    </view>
+    <view class="flex-twice  padding-sm margin-xs radius">
+      <!-- <image class="wechat" src="/images/wechat.png"></image> -->
+      <text class="cuIcon-weixin lg text-green"></text>
+      <text>微信支付</text>
+      <text class="cuIcon-right lg text-gray right"></text>
+    </view>
+  </view>
+  <!-- 充值金额 -->
+  <view class="amount">
+  <view class="padding">
+      <view>充值金额</view>
+      <view class="flex p-xs mb-sm amount-input">
+          <view class="flex-xs radius">
+          <text class="amount-size">¥</text>
+          </view>
+          <view class="flex-twice radius"> 
+           <input name="amount" class="amount-money" type="digit" value="{{amount}}" placeholder="至少充值 {{recharge_amount_min}} 元"/>
+          </view>
+      </view>
+     
+      <!-- 提交按钮 -->
+    <button class="cu-btn block bg-red lg"role="button"aria-disabled="false" formType="submit">确认充值</button>
+  </view>
+  </view>
+  </form>
+</view>

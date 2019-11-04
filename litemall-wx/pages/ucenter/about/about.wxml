@@ -1,0 +1,28 @@
+<cu-custom bgColor="bg-white" isBack="{{true}}"><view slot="backText">返回</view><view slot="content">关于俏东东</view></cu-custom>
+<!-- <view class="container">
+  <view class="login-box">
+    <button type="primary" open-type="getUserInfo" class="wx-login-btn" bindgetuserinfo="wxLogin">微信直接登录</button>
+    <button type="primary" class="account-login-btn" bindtap="accountLogin">账号登录</button>
+  </view>
+</view> -->
+<view class="container">
+  <view class="article-title">- 会员等级制度 -</view>
+  <view class="size">
+    <view class="article-text">俏东东佳品分享平台是为会员服务的，要购买产品，必须先下载软件，加入会员。</view>
+  <view class="article-text">
+     每个会员都可以拉其他人加入平台，他拉来的人就是他的下线，每个下线在平台产生消费，拉人的会员都可以得到提成。
+我们的会员也是分等级的，你要享受更多特权，更好的服务，你就必须努力成为更高级会员，会员分钻石会员、金卡会员和普通会员等三个等级。能达到什么等级，是要综合考虑每个人在平台的消费量和他团队的消费量。
+  </view>
+  <view class="article-text">
+       我们的商品分为几种，一种是固定价格的产品，全网统一价，我们只会根据会员的不同级别给予不同的返点或折扣优惠。
+另一种是“团购”产品，根据购买人数的不同产品的价格会作出相应调整。比如，有一款手机，它的零售价是2000，如果有10个人拼购，它的售价可能是每台1800元，20个人可能是1700元。当然，拼购是有时间限制的，比如24小时之内完成组团。
+  </view>
+  <view class="article-text">
+     还有一个就是“拼购”，产品采用何种购买方式由商家和平台设定，消费者点击进入产品页面后可以自行选择购买方式。我们的团购和拼购概念与其他平台不同，是重新定义的，接下去还会阐述具体的操作方式。
+  </view>
+  <view class="article-text">
+     我们平台所有商品的遴选都会有一套严格的评审程序，首先要有推荐人，推荐人除了推荐某一产品，还要协助我们做好与生产商的对接签约工作，并且要对自己推荐的产品负责。当然他也会有回报，也就是说，这个产品所产生的所有消费，他都有提成。
+  </view>
+  </view>
+  
+</view>

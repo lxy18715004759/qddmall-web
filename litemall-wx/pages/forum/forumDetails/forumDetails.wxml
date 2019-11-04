@@ -1,0 +1,56 @@
+<!-- pages/forum/forumDetails/forumDetails.wxml -->
+<cu-custom bgColor="bg-white" isBack="{{true}}">
+  <view slot="backText">返回</view>
+  <view slot="content">{{forumDetail.title}}</view>
+</cu-custom>
+<view class="cu-card dynamic no-card">
+  <view class="cu-item shadow">
+    <view class="cu-list menu-avatar">
+      <view class="cu-item">
+        <view class="cu-avatar round lg" style="background-image:url({{forumDetail.avatar}});"></view>
+        <view class="content flex-sub">
+          <view>{{forumDetail.nickname}}</view>
+          <view class="text-gray text-sm flex justify-between">{{forumDetail.addTime}}</view>
+        </view>
+      </view>
+    </view>
+    <view class="text-content">{{forumDetail.context}}</view>
+    <view class="grid flex-sub padding-lr col-3 grid-square">
+      <view class="bg-img" style="background-image:url({{item}});" wx:for="{{picUrls}}" wx:key="{{index}}"></view>
+    </view>
+    <view class="text-gray text-sm text-right padding">
+      <!-- <text class="cuIcon-attentionfill margin-lr-xs"></text> 10 -->
+      <text class="cuIcon-appreciatefill margin-lr-xs icon-size" bindtap="good"></text>
+      {{forumDetail.likeCount}}
+      <text class="cuIcon-messagefill margin-lr-xs icon-size" bindtap="reply" focus='true'></text>
+      {{forumDetail.replyCount}}
+    </view>
+    <view class="cu-list menu-avatar comment solids-top" wx:for="{{forumReplay}}" wx:key="{{index}}">
+      <view class="cu-item">
+        <view class="cu-avatar round" style="background-image:url({{item.avatar}});"></view>
+        <view class="content">
+          <view class="text-grey">{{item.nickname}}</view>
+          <view class="text-gray text-content text-df">{{item.replayText}}</view>
+          <view class="margin-top-sm flex justify-between">
+            <view class="text-gray text-df">{{item.addTime}}</view>
+            <!-- <view>
+              <text class="cuIcon-appreciatefill text-red"></text>
+              <text class="cuIcon-messagefill text-gray margin-left-sm"></text>
+            </view> -->
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+<view class="height"></view>
+<view class="cu-bar input reply">
+  <!-- <view class="action">
+    <text class="cuIcon-sound text-grey"></text>
+  </view> -->
+  <input class="solid-bottom reply-input" focus="{{focus}}" maxlength="300" cursor-spacing="10" bindinput="content" value="{{content}}"></input>
+  <!-- <view class="action">
+    <text class="cuIcon-emojifill text-grey"></text>
+  </view> -->
+  <button class="cu-btn bg-green shadow-blur" bindtap="replyContent">回复</button>
+</view>

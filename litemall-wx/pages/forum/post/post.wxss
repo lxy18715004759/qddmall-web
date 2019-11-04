@@ -1,0 +1,16 @@
+/* pages/forum/post/post.wxss */
+/* 按钮 */
+.forum-btn{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+.new-btn{
+  border-radius: 20px;
+  background-color: #E4007F;
+  color: #ffffff;
+  margin: 10px 20px;
+  width: 90%;
+  height: 40px;
+  line-height: 40px;
+}

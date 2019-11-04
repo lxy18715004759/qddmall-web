@@ -1,0 +1,18 @@
+/* pages/forum/forumDetails/forumDetails.wxss */
+.icon-size {
+  font-size: 15px;
+}
+.cu-bar {
+  position: fixed;
+  width: 100%;
+  border: 1px solid #eeeeee;
+  bottom: 0;
+}
+.height {
+  height: 50px;
+}
+.reply-input {
+  border: 1px solid #39b54a;
+  border-radius: 15px;
+  padding-left: 10px;
+}

@@ -1,0 +1,20 @@
+<!--pages/ucenter/vip/vip.wxml-->
+<cu-custom bgColor="bg-white" isBack="{{true}}"><view slot="backText">返回</view><view slot="content">会员等级</view></cu-custom>
+<view class="size">
+  <view class="flex vip">
+    <image class="vip-img" src="/images/vip.png"></image>
+    <view class="margin-size">累计消费:<text class="color">398.00</text></view>
+    <view class="margin-size">当前等级:<text class="color">普通会员</text></view>
+  </view>
+  <view class="article-title">会员等级制度</view>
+  <view class="article-text">俏东东佳品分享平台VIP会员等级分为普通会员、金卡会员和银卡会员三种。</view>
+  <view class="article-text">
+      用户通过微信登录平台并且绑定手机号后，或者直接通过手机号注册为会员后，直接成为普通会员，购物时享受2%的返点（返点为平台积分，可在下次购物时直接抵现，详细介绍可以在“我的钱包-积分-查看规则”中了解）。
+  </view>
+  <view class="article-text">
+      会员在平台实际消费（包含充值）金额满1000元时，成为银卡会员，银卡会员购物时在商品实际售价上再享受9.8折，并且购物返点 提升为3%。
+  </view>
+  <view class="article-text">
+      会员在平台实际消费金额满5000元时，成为金卡会员。金卡会员购物时在商品实际售价上再享受9.5折，并且购物返点提升为5%。
+  </view>
+</view>

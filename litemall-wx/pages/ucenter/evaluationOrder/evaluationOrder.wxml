@@ -1,0 +1,50 @@
+<!--pages/ucenter/evaluationOrder/evaluationOrder.wxml-->
+<cu-custom bgColor="bg-white" isBack="{{true}}"><view slot="backText">返回</view><view slot="content">评鉴订单</view></cu-custom>
+<view class="state">
+  <text class="state-text">评鉴订单状态：已发货</text>
+</view>
+<view class="cu-list menu {{menuBorder?'sm-border':''}} {{menuCard?'card-menu margin-top':''}}">
+<view class="cu-item">
+      <view class="action">
+        <image class="order-img" src="/images/order/shouhuo.png"></image>
+      </view>
+      <view class="content padding-tb-sm">
+        <view>
+          已签收，签收人是：「自提柜」</view>
+        <view class="text-gray text-sm">
+          2018-08-22 18:00:00</view>
+      </view>
+      <!-- <view class="action">
+        <text class="cuIcon-right lg text-gray"></text>
+      </view> -->
+    </view>
+    <view class="cu-item">
+      <view class="action">
+        <image class="order-img" src="/images/address.png"></image>
+      </view>
+      <view class="content padding-tb-sm">
+        <view>
+          收件人姓名   12345678910</view>
+        <view class="text-gray text-sm">
+          xx省xx市xx路xx小区xx号楼xx</view>
+      </view>
+      <!-- <view class="action">
+        <text class="cuIcon-right lg text-gray"></text>
+      </view> -->
+    </view>
+  </view> 
+<view class="size">
+  <view class="cardName">俏东东礼品专营店</view>
+  <view class="flex">
+    <image class="card-img" src="/images/msg.png"></image>
+    <view class="card-width">
+      <view class="text3">「悦中秋礼盒」月圆版</view>
+      <view class="text8">规格：礼品套盒</view>
+    </view>
+    <view class="card-right">
+      <view class="text3">¥298.00</view>
+      <view class="text8 text-right">x1</view>
+    </view>
+  </view>
+  <view class="btn-right"><button class="cu-btn round bg-red card-btn">去评价</button></view>
+</view>  

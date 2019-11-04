@@ -1,0 +1,17 @@
+<cu-custom bgColor="bg-white" isBack="{{true}}"><view slot="backText">返回</view><view slot="content">团队奖励规则</view></cu-custom>
+<!-- <view class="container">
+  <view class="login-box">
+    <button type="primary" open-type="getUserInfo" class="wx-login-btn" bindgetuserinfo="wxLogin">微信直接登录</button>
+    <button type="primary" class="account-login-btn" bindtap="accountLogin">账号登录</button>
+  </view>
+</view> -->
+<view class="container">
+  <view class="article-title">- 团队奖励规则 -</view>
+  <view class="size">
+    <view class="article-text">每个会员都可以拉其他人加入平台，他拉来的人就是他的下线，每个下线在平台产生消费，拉人的会员都可以得到提成积分，积分可以在后续购物中抵现。</view>
+    <view class="article-text">点击“添加成员”分享链接给好友/社交圈，当好友通过这个链接注册成为会员后则成为“我的团队”成员。</view>
+    <view class="article-text">会员实行等级制度，会员分钻石会员、金卡会员和普通会员等三个等级，更高级会员享受更多特权，更好的服务。会员等级考核，是综合个人在平台的消费量和其团队成员的消费量来进行评定的。</view>
+    <view class="article-text">会员的等级不同，给予的返点或折扣优惠不同。</view>
+  </view>
+</view>
+

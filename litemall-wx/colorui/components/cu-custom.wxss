@@ -1,0 +1,42 @@
+/* colorui/components/cu-custom.wxss */
+.window-nav{
+  height: 115px;
+  background-color: #FF4F9C;
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+  z-index: -1;
+}
+.nav-head{
+  padding: 30px 15px;
+}
+.logo{
+  height: 18px;
+  width: 68px;
+}
+.nav-search-form{
+  border-radius: 15px;
+  height: 24px;
+  width: 170px;
+  background-color: #f5f5f5;
+  display: flex;
+  align-items: center;
+  margin-right: 30%;
+  margin-bottom: 5px;
+  text-align: center;
+}
+.body-size{
+  width: 90%;
+  margin: 0 auto;
+  background-color: #F0F0F0;
+}
+.popular{
+  background-color: #ffffff;
+}
+.txt {
+  height: 42rpx;
+  line-height: 42rpx;
+  color: #666;
+  padding-left: 40px;
+  font-size: 30rpx;
+}
+/* --------- */

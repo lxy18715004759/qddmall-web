@@ -1,0 +1,58 @@
+<!--pages/evaluation/apply/apply.wxml-->
+<cu-custom bgColor="bg-white" isBack="{{true}}"><view slot="backText">返回</view><view slot="content">评鉴详情</view></cu-custom>
+<view class="card-box">
+<view class="flex align-start">
+  <view class="" bindtap="toDetailsTap" data-id="{{goods.goodId}}">
+  <image class="card-img" src="{{goods.picUrl}}"></image>
+  </view>
+  <view class=" padding-sm margin-xs">
+  <view class="grid col-1">
+    <view class=" card-title">{{goods.goodName}}</view>
+    <view class=" card-text">{{goods.brief}}</view>
+    <!-- <view class=" card-pic">
+    <text class="pic-color">￥{{item.retailPrice}} </text>
+    <text class="nopic-color"> ￥{{item.counterPrice}}</text>
+    </view> -->
+    <view class="flex justify-between">
+    <view>
+       <view class="radius card-stock">
+       提供量：{{goods.goodCount}}件
+        </view>
+         <view class="radius card-stock">
+       总申请人数：{{goods.applyCount}}人
+        </view>
+    </view> 
+    </view>
+    </view>
+  </view>
+</view>
+  <view class="apply-list">—— 申请成功列表 ——</view>
+    <view class="grid col-2 margin-bottom text-center">
+      <view class="padding apply-user" wx:for="{{userList}}">
+        <view class="flex p-xs margin-bottom-sm mb-sm">
+          <view class="radius">
+            <image class="user-head" src="{{item.avatar}}"></image>
+          </view>
+          <view class="flex-sub radius user-name">
+          {{item.nickname}}
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+<view class="more-apply">—— 评审官说 ——</view>
+<view class="chat-box">
+  <view class="flex">
+    <image class="chat-headUrl" src="/images/msg.png"></image>
+    <view class="chat-name">俏东东</view>
+    <view class="chat-score">评分</view>
+  </view>
+  <view class="chat-txt">月饼很好吃！套盒里的护肤品使用感也很好，尤其是那个原液～</view>
+  <view class="chat-imgs grid col-4">
+    <image class="chat-img" src="/images/chat.png"></image>
+     <image class="chat-img" src="/images/chat.png"></image>
+      <image class="chat-img" src="/images/chat.png"></image>
+       <image class="chat-img" src="/images/chat.png"></image>
+  </view>
+  <view class="chat-time">2019-09-10 10:00:00</view>
+</view>

@@ -1,0 +1,25 @@
+<!--pages/ucenter/vip/vip.wxml-->
+<cu-custom bgColor="bg-white" isBack="{{true}}"><view slot="backText">返回</view><view slot="content">我的团队</view></cu-custom>
+<view class="size">
+  <view class="flex vip">
+    <image class="vip-img" src="/images/team.png"></image>
+    <view class="margin-size">团队人数:<text class="color">2</text></view>
+    <view class="margin-size">
+      <button class="cu-btn round btn-color" bindtap="goRule">查看规则</button>
+    </view>
+    <view class="margin-size">
+    <button class="cu-btn round line-red">添加成员</button
+    ></view>
+  </view>
+</view>
+<view class="team-flex">
+  <image class="team-img" src="/images/msg.png"></image>
+  <view class="team-name">俏东东</view>
+  <button class="team-btn cu-btn round line-red">解除关系</button>
+</view>
+<view class="team-flex">
+  <image class="team-img" src="/images/msg.png"></image>
+  <view class="team-name">俏东东</view>
+  <button class="team-btn cu-btn round line-red">解除关系</button>
+</view>
+

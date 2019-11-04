@@ -1,0 +1,54 @@
+<!-- pages/forum/post/post.wxml -->
+<cu-custom bgColor="bg-white" isBack="{{true}}">
+  <view slot="backText">返回</view>
+  <view slot="content">发帖</view>
+</cu-custom>
+<form bindsubmit="save">
+  <view class="cu-form-group">
+    <view class="title">
+      <text class="text-orange">*</text>
+      主题：
+    </view>
+    <input name="title" placeholder="请输入主题"></input>
+  </view>
+  <view class="cu-form-group">
+    <view class="title">
+      <text class="text-orange">*</text>
+      内容：
+    </view>
+    <textarea name="content" bindinput="textareaBInput" maxlength="-1" placeholder="请输入内容"></textarea>
+  </view>
+  <!-- 图片上传 -->
+  <view class="cu-bar bg-white margin-top">
+    <view class="action">
+      <text class="text-orange">*</text>
+      上传图片：
+    </view>
+    <view class="action">{{imgList.length}}/9</view>
+  </view>
+  <view class="cu-form-group">
+    <view class="grid col-4 grid-square flex-sub">
+      <view class="bg-img" wx:for="{{imgList}}" wx:key="{{index}}" bindtap="ViewImage" data-url="{{imgList[index]}}">
+        <image src='{{imgList[index]}}' mode='aspectFill'></image>
+        <view class="cu-tag bg-red" catchtap="DelImg" data-index="{{index}}">
+          <text class="cuIcon-close"></text>
+        </view>
+      </view>
+      <view class="solids" bindtap="ChooseImage" wx:if="{{imgList.length<9}}">
+        <!-- <text class="cuIcon-cameraadd"></text> -->
+        <text class="cuIcon-picfill"></text>
+      </view>
+      <!-- <view class="solids" bindtap="chooseVideo" wx:if="{{video.length<1}}">
+				<text class="cuIcon-cameraadd"></text>
+			</view>
+      <block wx:if="{{video != ''}}">
+        <video class="video" src="{{video}}"></video> 
+				<button class="close-btn" bindtap="DelVideo"><text class="cuIcon-close close"></text></button>
+      </block> -->
+    </view>
+  </view>
+  <!-- 提交按钮 -->
+  <view class="forum-btn">
+    <button class="new-btn" form-type="submit">确认发布</button>
+  </view>
+</form>

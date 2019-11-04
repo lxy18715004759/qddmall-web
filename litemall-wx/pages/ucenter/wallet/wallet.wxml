@@ -1,0 +1,74 @@
+<!--pages/ucenter/vip/vip.wxml-->
+<cu-custom bgColor="bg-white" isBack="{{true}}"><view slot="backText">返回</view><view slot="content">我的钱包</view></cu-custom>
+<scroll-view scroll-x class="bg-white nav">
+  <view class="flex text-center">
+    <view class="cu-item flex-sub {{0==TabCur?'text-color cur':''}}"  bindtap="tabSelect" data-id="0">
+     余额
+    </view>
+    <view class="cu-item flex-sub {{1==TabCur?'text-color cur':''}}"  bindtap="tabSelect" data-id="1">
+     积分
+    </view>
+  </view>
+</scroll-view>
+<block wx:if="{{TabCur==0}}">
+<view class="size">
+  <view class="flex vip">
+    <image class="vip-img" src="/images/money.png"></image>
+    <view class="margin-size">余额:<text class="color">100</text></view>
+    <view class="margin-size">
+      <button class="cu-btn round btn-color" bindtap="goRechage">充值</button>
+    </view>
+  </view>
+</view>
+<view class="detailed">交易明细</view>
+<view class="item">
+  <view class="item-time">2019-08-20 09:00:00   
+    <!-- <text class="item-text">团队成员购物积分</text> -->
+  </view>
+  <view class="item-money">+5.96</view>
+</view>
+<view class="item">
+  <view class="item-time">2019-08-20 09:00:00   
+  </view>
+  <view class="item-money">+5.96</view>
+</view>
+<view class="item">
+  <view class="item-time">2019-08-20 09:00:00   
+  </view>
+  <view class="item-money">+5.96</view>
+</view>
+
+</block>
+
+
+<block wx:if="{{TabCur==1}}">
+<view class="size">
+  <view class="flex vip">
+    <image class="vip-img" src="/images/integral.png"></image>
+    <view class="margin-size">积分:<text class="color">2</text></view>
+    <view class="margin-size">
+      <button class="cu-btn round btn-color" bindtap="goRule">查看规则</button>
+    </view>
+  </view>
+</view>
+<view class="detailed">积分明细</view>
+<view class="item">
+  <view class="item-time">2019-08-20 09:00:00   
+    <text class="item-text">团队成员购物积分</text>
+  </view>
+  <view class="item-money">+5.96</view>
+</view>
+<view class="item">
+  <view class="item-time">2019-08-20 09:00:00   
+    <text class="item-text">团队成员购物积分</text>
+  </view>
+  <view class="item-money">+5.96</view>
+</view>
+<view class="item">
+  <view class="item-time">2019-08-20 09:00:00   
+    <text class="item-text">团队成员购物积分</text>
+  </view>
+  <view class="item-money">+5.96</view>
+</view>
+</block>
+

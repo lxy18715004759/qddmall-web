@@ -1,0 +1,63 @@
+/* pages/ucenter/vip/vip.wxss */
+.size{
+  width: 90%;
+  margin: 15px auto;
+}
+.vip{
+  background-color: white;
+  height: 80px;
+  border-radius: 10px;
+  text-align: center;
+}
+.vip-img{
+  width: 43px;
+  height: 43px;
+  margin: 16px 0 22px 26px;
+}
+.margin-size{
+  margin: auto;
+  font-size: 15px;
+}
+.color{
+  color: #E4007F;
+  font-weight: bold;
+  font-size: 15px;
+}
+.btn-color{
+  background-color: #E4007F!important;
+  color: white;
+}
+.flex{
+  background-color: white;
+  height: 80px;
+}
+.detailed{
+ padding: 10px;
+ background-color: white;
+ text-align: center;
+ border-bottom: 0.5px #eeeeee solid;
+}
+.item{
+  display: flex;
+  height: 40px;
+  line-height: 40px;
+  background-color: white;
+   border-bottom: 0.5px #eeeeee solid;
+}
+.item-time{
+  width: 85%;
+  margin-left: 10px;
+}
+.item-text{
+  margin-left: 10px;
+}
+.item-money{
+  width: 15%;
+}
+.text-color{
+  color: #E4007F;
+}
+.flex-sub{
+  width: 50%;
+  margin: 0 50px!important;
+}

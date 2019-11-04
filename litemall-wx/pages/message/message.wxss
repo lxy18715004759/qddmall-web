@@ -1,0 +1,15 @@
+/* pages/message/message.wxss */
+.notice-text{
+  margin: 0 20px;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-bottom-color: #eee;
+}
+.chat-img{
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+}
+.text-width{
+  width: 100%;
+}

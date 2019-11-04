@@ -1,0 +1,34 @@
+<!--pages/ucenter/assess/assess.wxml-->
+<cu-custom bgColor="bg-white" isBack="{{true}}"><view slot="backText">返回</view><view slot="content">我的评价</view></cu-custom>
+<view class="chat-box">
+  <view class="flex">
+    <image class="chat-headUrl" src="/images/msg.png"></image>
+    <view class="chat-name">俏东东</view>
+    <view class="chat-score">评分</view>
+    <view class="chat-more" bindtap="goMore">查看更多<text class="cuIcon-right"></text></view>
+  </view>
+  <view class="chat-txt">月饼很好吃！套盒里的护肤品使用感也很好，尤其是那个原液～</view>
+  <view class="chat-imgs grid col-4">
+    <image class="chat-img" src="/images/chat.png"></image>
+     <image class="chat-img" src="/images/chat.png"></image>
+      <image class="chat-img" src="/images/chat.png"></image>
+       <image class="chat-img" src="/images/chat.png"></image>
+  </view>
+  <view class="size">
+  <view class="cardName">俏东东礼品专营店</view>
+  <view class="flex">
+    <image class="card-img" src="/images/msg.png"></image>
+    <view class="card-width">
+      <view class="text3">「悦中秋礼盒」月圆版</view>
+      <view class="text8">规格：礼品套盒</view>
+    </view>
+    <view class="card-right">
+      <view class="text3">¥298.00</view>
+      <view class="text8 text-right">x1</view>
+    </view>
+  </view>
+  <view class="btn-right"><text>共1件商品 合计：</text><text class="money-color">¥298.00</text></view>
+</view>  
+  <view class="chat-time">2019-09-10 10:00:00</view>
+</view>
+

@@ -1,0 +1,61 @@
+/* pages/tuijian/tuijian.wxss */
+.text-orange{
+  font-size: 20px;
+  height: 1.4rem;
+}
+.video{
+  height:375px;
+  width: 100%;
+  text-align: center;
+}
+.close{
+  color: red;
+}
+.close-btn{
+  background-color: #eeeeee;
+  opacity: 0.5;
+}
+.coupons-float {
+  position: fixed;
+  right:15rpx;
+  bottom:80rpx;
+  width:80rpx;
+  height:80rpx;
+  background-color: #DDDDDD;
+  text-align: center;
+  border-radius:50%;
+  border: 1rpx solid #ddd;
+}
+.forum-float {
+  position: fixed;
+  right:15rpx;
+  bottom:180rpx;
+  width:80rpx;
+  height:80rpx;
+  background-color: #DDDDDD;
+  text-align: center;
+  border-radius:50%;
+  border: 1rpx solid #ddd;
+}
+.forum-float image {
+  width:60rpx;
+  height:60rpx;
+  margin-top: 10rpx;
+}
+.coupons-float image {
+  width:60rpx;
+  height:60rpx;
+  margin-top: 10rpx;
+}
+.lg{
+   border-radius: 20px;
+  background-color: #E4007F;
+  color: #ffffff;
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+}
+.rtitle{
+  line-height: 2px;
+  min-height: 50px;
+}

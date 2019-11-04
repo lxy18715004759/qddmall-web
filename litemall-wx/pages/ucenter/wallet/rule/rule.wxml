@@ -1,0 +1,15 @@
+<cu-custom bgColor="bg-white" isBack="{{true}}"><view slot="backText">返回</view><view slot="content">积分奖励规则</view></cu-custom>
+<!-- <view class="container">
+  <view class="login-box">
+    <button type="primary" open-type="getUserInfo" class="wx-login-btn" bindgetuserinfo="wxLogin">微信直接登录</button>
+    <button type="primary" class="account-login-btn" bindtap="accountLogin">账号登录</button>
+  </view>
+</view> -->
+<view class="container">
+  <view class="article-title">- 积分奖励规则 -</view>
+  <view class="size">
+    <view class="article-text">对会员的积分奖励有两种，一种是我的团队成员购买产品，会有相应的提成积分，可以称为团队奖励。还有一种是帮助推广产品，包括固定价格的产品和团购拼购的产品，只要转发链接或者发起拼团购，其他用户从这个转发的链接进入购买产品，同样有积分奖励，称为推广奖励。</view>
+    <view class="article-text"> 购买返和金额数值百分之5的积分，只要转发分享就可以得1积分，推广链接购物成功的话是返金额的2%，二级推广成功购物是1%，下线购买也是2%。1积分=1元，可以在后续购物中进行抵扣。</view>
+  </view>
+</view>
+

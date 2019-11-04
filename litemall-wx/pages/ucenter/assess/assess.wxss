@@ -1,0 +1,81 @@
+/* pages/ucenter/assess/assess.wxss */
+.chat-box{
+  padding:  20px;
+  border-radius: 10px;
+  background-color: #FFFFFF;
+}
+.chat-headUrl{
+  width: 24px;
+  height: 24px;
+}
+.chat-name{
+  margin-left: 5px;
+}
+.chat-score{
+  margin-left: 5px;
+}
+.chat-img{
+  width: 65px;
+  height: 65px;
+  margin: 10px auto;
+}
+.chat-txt{
+  margin: 10px 0;
+}
+.chat-time{
+  text-align: right;
+  color: #888888;
+}
+.chat-more{
+  position: absolute;
+  right: 10px;
+}
+/* 商品 */
+.size{
+  height: 120px;
+  margin: 5px;
+  background-color: #F9F9F9;
+  border-radius: 10px;
+  padding: 10px;
+}
+.card-img{
+  width: 65px;
+  height: 65px;
+}
+.card-right{
+  position: absolute;
+  right: 30px;
+}
+.card-width{
+  margin-left: 20px;
+}
+.card-btn{
+  width: 60px;
+  height: 20px;
+  padding: 0!important;
+  line-height: 20px;
+  font-size: 11px;
+}
+.btn-right{
+  position: relative;
+  text-align: right;
+  right: 0px;
+  bottom: 5px;
+}
+.text3{
+  color: #333333;
+  font-size: 15px;
+}
+.text8{
+  color: #888888;
+  font-size: 12px;
+  margin-top: 5px;
+}
+text-right{
+  text-align: right;
+}
+.money-color{
+  font-weight: bold;
+  color: #E4007F;
+  font-size: 18px;
+}

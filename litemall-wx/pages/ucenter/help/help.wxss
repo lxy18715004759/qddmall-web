@@ -1,0 +1,7 @@
+/* pages/ucenter/help/help.wxss */
+.right{
+  float: right;
+}
+.cu-item{
+  margin-top: 10px;
+}

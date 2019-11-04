@@ -1,0 +1,56 @@
+/* pages/ucenter/vip/vip.wxss */
+.size{
+  width: 90%;
+  margin: 15px auto;
+}
+.vip{
+  background-color: white;
+  height: 80px;
+  border-radius: 10px;
+  text-align: center;
+}
+.vip-img{
+  width: 43px;
+  height: 43px;
+  margin: 16px 0 22px 26px;
+}
+.margin-size{
+  margin: auto;
+  font-size: 12px;
+}
+.color{
+  color: #E4007F;
+  font-weight: bold;
+  font-size: 15px;
+}
+.btn-color{
+  background-color: #E4007F!important;
+  color: white;
+}
+.flex{
+  background-color: white;
+  height: 80px;
+}
+.team-flex{
+  height: 50px;
+  line-height: 50px;
+  display: flex;
+  background-color: white;
+  border-bottom: 0.5px #eeeeee solid;
+}
+.team-img{
+  width: 34px;
+  height: 34px;
+  margin: 8px 20px;
+}
+.team-btn{
+ position: absolute;
+ right: 0;
+ height: 25px!important;
+ width: 80px;
+ color: #E4007F;
+ border-color: #E4007F;
+ padding: 0;
+ margin-top: 12px;
+ margin-right: 10px;
+}

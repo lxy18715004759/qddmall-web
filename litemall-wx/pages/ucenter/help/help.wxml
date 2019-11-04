@@ -1,0 +1,23 @@
+<!--pages/ucenter/help/help.wxml-->
+<cu-custom bgColor="bg-white" isBack="{{true}}"><view slot="backText">返回</view><view slot="content">帮助中心</view></cu-custom>
+<!-- 导航栏 -->
+  <view class="cu-list menu radius">
+    <view class="cu-item">
+      <navigator class="content" hover-class="none" url="../about/about">
+        <text class="text-grey">关于俏东东</text>
+        <text class="cuIcon-right right"></text>
+      </navigator>
+    </view>
+    <view class="cu-item">
+      <navigator class="content" hover-class="none" url="../problem/problem">
+        <text class="text-grey">常见问题</text>
+        <text class="cuIcon-right right"></text>
+      </navigator>
+    </view>
+    <view class="cu-item">
+      <navigator class="content" hover-class="none" url="../feedback/feedback">
+        <text class="text-grey">问题反馈</text>
+        <text class="cuIcon-right right"></text>
+      </navigator>
+    </view>
+  </view>  

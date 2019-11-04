@@ -1,0 +1,73 @@
+<!--pages/evaluation/apply/apply.wxml-->
+<cu-custom bgColor="bg-white" isBack="{{true}}"><view slot="backText">返回</view><view slot="content">立即申请</view></cu-custom>
+<view>
+<view class="flex  align-start card-box">
+  <view class="" bindtap="toDetailsTap" data-id="{{goods.goodId}}">
+  <image class="card-img" src="{{goods.picUrl}}"></image>
+  </view>
+  <view class=" padding-sm margin-xs">
+  <view class="grid col-1">
+    <view class=" card-title">{{goods.goodName}}</view>
+    <view class=" card-text">{{goods.brief}}</view>
+    <!-- <view class=" card-pic">
+    <text class="pic-color">￥{{item.retailPrice}} </text>
+    <text class="nopic-color"> ￥{{item.counterPrice}}</text>
+    </view> -->
+    <view class="flex justify-between">
+    <view>
+       <view class="radius card-stock">
+       提供量：{{goods.goodCount}}件
+        </view>
+         <view class="radius card-stock">
+       已申请人数：{{goods.applyCount}}人
+        </view>
+         <view class="radius card-stock">
+      截止日期：{{goods.endTime}}
+        </view>
+    </view> 
+    </view>
+    </view>
+  </view>
+</view>
+</view>
+<view>
+<form  bindsubmit='submile'>
+	<view class="cu-form-group align-start">
+		<view class="title"><text class="text-orange">*</text>申请理由：</view>
+		<textarea maxlength="-1" disabled="{{modalName!=null}}" name="reason" bindinput="textareaBInput" placeholder=""></textarea>
+	</view>
+<view class="cu-form-group">
+		<view class="title"><text class="text-orange">*</text>收货地址：</view>
+    <picker bindchange="PickerChange" value="{{addressId}}" range="{{addressList}}">
+      <view class="picker"> {{addressDefault}} </view>
+    </picker>
+	</view>
+  <button class="cu-btn bg-red margin-tb-sm lg btn-submit" form-type='submit'>确认提交</button>
+</form>
+</view>
+<view class="more-apply">—— 更多评鉴 ——</view>
+<view wx:for-items="{{moreGoods}}" wx:key="{{index}}">
+<view class="flex  align-start card-box">
+  <view class=""  bindtap="toDetailsTap" data-id="{{item.goodId}}">
+  <image class="card-img" src="{{item.picUrl}}"></image>
+  </view>
+  <view class=" padding-sm margin-xs">
+  <view class="grid col-1">
+    <view class="apply-title">{{item.goodName}}</view>
+    <view class="apply-text">{{item.brief}}</view>
+    <!-- <view class=" card-pic">
+    <text class="pic-color">￥{{item.retailPrice}} </text>
+    <text class="nopic-color"> ￥{{item.counterPrice}}</text>
+    </view> -->
+    <view class="flex justify-between">
+        <view class="radius apply-stock">
+       限量：{{item.goodCount}}件
+        </view>
+         <view class="radius card-stock" bindtap="goApply" data-id="{{item.id}}">
+      <button class="cu-btn round btn-apply">申请评鉴</button>
+        </view>
+    </view>
+    </view>
+  </view>
+</view>
+</view>

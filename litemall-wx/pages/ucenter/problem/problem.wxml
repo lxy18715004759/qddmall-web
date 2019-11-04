@@ -1,0 +1,27 @@
+<cu-custom bgColor="bg-white" isBack="{{true}}"><view slot="backText">返回</view><view slot="content">常见问题</view></cu-custom>
+<!-- 导航栏 -->
+  <view class="cu-list menu radius">
+    <view class="flex">
+    <image class="img" src="/images/order/shouhou.png"></image>
+    <view>售后</view>
+    </view>
+    <view class="cu-item">
+      <navigator class="content" hover-class="none" url="./after/after">
+        <text class="text-grey">如何申请退款/退货？</text>
+      </navigator>
+    </view>
+     <view class="flex">
+     <image class="img" src="/images/order/shouhuo.png"></image>
+    <view>物流</view>
+    </view>
+    <view class="cu-item">
+      <navigator class="content" hover-class="none" url="./sendtime/sendtime">
+        <text class="text-grey">发货时间</text>
+      </navigator>
+    </view>
+    <view class="cu-item">
+      <navigator class="content" hover-class="none" url="./cost/cost">
+        <text class="text-grey">配送费用</text>
+      </navigator>
+    </view>
+  </view>  

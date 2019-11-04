@@ -1,0 +1,105 @@
+<!--pages/tuijian/tuijian.wxml-->
+<cu-custom bgColor="bg-white" isBack="{{true}}"><view slot="backText">返回</view><view slot="content">推荐商品</view></cu-custom>
+<form bindsubmit="save">
+<view class="cu-form-group">
+  <view class="title"><text class="text-orange">*</text>商品名称：</view>
+    <input placeholder="请输入商品名称"></input>
+</view>
+<view class="cu-form-group">
+  <view class="title"><text class="text-orange">*</text>商品种类：</view>
+    <input placeholder="请选择商品种类"></input>
+</view>
+<view class="cu-form-group">
+  <view class="title"><text class="text-orange">*</text>商品规格：</view>
+    <input placeholder="请输入商品售价"></input>
+</view>
+<view class="cu-form-group">
+  <view class="title"><text class="text-orange">*</text>商品售价：</view>
+    <input placeholder="请输入商品售价"></input>
+</view>
+<view class="cu-form-group">
+  <view class="title"><text class="text-orange">*</text>生产厂商：</view>
+    <input placeholder="请输入商品厂商"></input>
+</view>
+<!-- 地址选择 -->
+	<view class="cu-form-group">
+		<view class="title"><text class="text-orange">*</text>生产地址：</view>
+		<picker mode="region" bindchange="RegionChange" value="{{region}}" custom-item="{{customItem}}">
+			<view class="picker">
+				{{region[0]}}，{{region[1]}}，{{region[2]}}
+			</view>
+		</picker>
+	</view>
+  <view class="cu-form-group">
+  <view class="title">许可证编号：</view>
+    <input placeholder="请输入许可证编号"></input>
+</view>
+<!-- 图片上传 -->
+	<view class="cu-bar bg-white margin-top">
+		<view class="action">
+			<text class="text-orange">*</text>上传图片/视频：
+		</view>
+		<view class="action">
+			{{imgList.length}}/4
+		</view>
+	</view>
+	<view class="cu-form-group">
+		<view class="grid col-4 grid-square flex-sub">
+			<view class="bg-img" wx:for="{{imgList}}" wx:key="{{index}}" bindtap="ViewImage" data-url="{{imgList[index]}}">
+				<image src='{{imgList[index]}}' mode='aspectFill'></image>
+				<view class="cu-tag bg-red" catchtap="DelImg" data-index="{{index}}">
+					<text class="cuIcon-close"></text>
+				</view>
+			</view>
+			<view class="solids" bindtap="ChooseImage" wx:if="{{imgList.length<4}}">
+				<!-- <text class="cuIcon-cameraadd"></text> -->
+        <text class="cuIcon-picfill"></text>
+			</view>
+      <view class="solids" bindtap="chooseVideo" wx:if="{{video.length<1}}">
+				<text class="cuIcon-cameraadd"></text>
+        <!-- <text class="cuIcon-picfill"></text> -->
+			</view>
+      <block wx:if="{{video != ''}}">
+        <video class="video" src="{{video}}"></video> 
+				<button class="close-btn" bindtap="DelVideo"><text class="cuIcon-close close"></text></button>
+      </block>
+		</view>
+	</view>
+  <!-- 上传商品条形码 -->
+  	<view class="cu-bar bg-white margin-top">
+		<view class="action">
+		上传商品条形码：
+		</view>
+		<view class="action">
+			{{imgList1.length}}/1
+		</view>
+	</view>
+	<view class="cu-form-group">
+		<view class="grid col-4 grid-square flex-sub">
+			<view class="bg-img" wx:for="{{imgList1}}" wx:key="{{index}}" bindtap="ViewImage1" data-url="{{imgList1[index]}}">
+				<image src='{{imgList1[index]}}' mode='aspectFill'></image>
+				<view class="cu-tag bg-red" catchtap="DelImg1" data-index="{{index}}">
+					<text class="cuIcon-close"></text>
+				</view>
+			</view>
+			<view class="solids" bindtap="ChooseImage1" wx:if="{{imgList1.length<1}}">
+				<text class="cuIcon-picfill"></text>
+			</view>
+		</view>
+	</view>
+  <view class="cu-form-group">
+  <view class="rtitle">推荐理由：</view>
+    <textarea bindinput="textareaBInput"maxlength="-1"placeholder="请输入理由"></textarea>
+  </view>
+  <!-- 提交按钮 -->
+  <view class="padding-xl">
+    <button class="cu-btn block bg-red lg"role="button"aria-disabled="false" form-type="submit">提交申请</button>
+  </view>
+  </form>
+<!-- 消息论坛 -->
+<view class='forum-float' bindtap="goForum">
+  <image src="/images/forum.png"></image>
+</view>
+<view class='coupons-float' bindtap="goMessage">
+  <image src="/images/msg.png"></image>
+</view>

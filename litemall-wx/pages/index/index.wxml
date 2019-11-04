@@ -1,0 +1,87 @@
+<view class="container">
+<!-- 头部导航栏 -->
+  <view class="window-nav" wx:if="{{windowsBar===0}}">
+    <view class="cu-bar search" style="padding-top:{{StatusBar}}px;padding-left:15px;height:{{CustomBar}}px;">
+    <view class="">
+      <image class="logo" src="/images/logo.png"></image>
+    </view>
+  <navigator url="/pages/search/search" class="nav-search-form">
+    <view class="input-text">
+       <text class="txt">悦中秋礼盒</text>
+    </view>
+    <text class="cuIcon-search"></text>
+  </navigator>
+  </view>
+  </view>
+  <view class="window-nav" wx:if="{{windowsBar===1}}">
+    <cu-custom bgColor="bg-white" isearch="{{true}}"></cu-custom>
+  </view>
+  <view class="body-size">
+  <!-- 轮播图 -->
+  <view class="swiper-container">
+    <swiper class="swiper_box" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" bindchange="swiperchange">
+      <block wx:for="{{banner}}" wx:key="id">
+        <swiper-item>
+          <image bindtap="tapBanner" data-id="{{item.id}}" src="{{item.url}}" class="slide-image" />
+        </swiper-item>
+      </block>
+    </swiper>
+    <view class="dots">
+      <block wx:for="{{banner}}" wx:key="unique">
+        <view class="dot{{index == swiperCurrent ? ' active' : ''}}"></view>
+      </block>
+    </view>
+  </view>
+
+<!-- 热门活动 -->
+<view class="grid col-5 margin-bottom text-center popular">
+<view class=" padding" bindtap="gotuangou">
+  <image class="icon" src="/images/nav/xinpin.png"></image>
+  <view class="text">新品</view></view>
+  <!-- <view class=" padding" bindtap="gomiaosha">
+  <image class="icon" src="/images/nav/miaosha.png"></image>
+  <view class="text">秒杀</view></view> -->
+  <view class=" padding" bindtap="gotuangou">
+  <image class="icon" src="/images/nav/rexiao.png"></image>
+  <view class="text">热销</view></view>
+  <!-- <view class=" padding" bindtap="gopintuan">
+  <image class="icon" src="/images/nav/pingou.png"></image>
+  <view class="text">拼购</view></view> -->
+  <view class=" padding" bindtap="gotuangou">
+  <image class="icon" src="/images/nav/tuangou.png"></image>
+  <view class="text">团购</view></view>
+  <view class=" padding" bindtap="goEvaluation">
+  <image class="icon" src="/images/nav/pingjian.png"></image>
+  <view class="text">商品评鉴</view></view>
+  <view class=" padding" bindtap="goRecommend">
+  <image class="icon" src="/images/nav/tuijian.png"></image>
+  <view class="text">推荐商品</view></view>
+</view>
+  <!-- 广告图 -->
+<view class="poster"></view>
+  <view class="weui-loadmore weui-loadmore_line">
+    <view class="weui-loadmore__tips weui-loadmore__tips_in-line color">甄选好礼</view>
+  </view>
+  <view class="goods-bg">
+  <view class="goods-container">
+    <view class="goods-box" wx:for-items="{{GoodsList}}" wx:key="{{index}}" bindtap="toDetailsTap" data-id="{{item.id}}">
+      <view class="img-box">
+        <image src="{{item.picUrl}}" class="image" mode="aspectFill" lazy-load="true" />
+      </view>
+      <view class="goods-title">{{item.name}}</view>
+      <view style='display:flex;'>
+        <view class="goods-price">¥ {{item.retailPrice}}</view>
+      </view>
+    </view>
+  </view>
+ </view> 
+  <view hidden="{{loadingMoreHidden ? true : false}}" class="no-more-goods">没有更多啦</view>
+</view>
+<!-- 消息论坛 -->
+<view class='forum-float' bindtap="goForum">
+  <image src="/images/forum.png"></image>
+</view>
+<view class='coupons-float' bindtap="goMessage">
+  <image src="/images/msg.png"></image>
+</view>
+</view>

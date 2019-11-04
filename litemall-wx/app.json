@@ -1,0 +1,117 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/catalog/catalog",
+    "pages/newGoods/newGoods",
+    "pages/hotGoods/hotGoods",
+    "pages/ucenter/index/index",
+    "pages/ucenter/vip/vip",
+    "pages/ucenter/address/address",
+    "pages/ucenter/addressAdd/addressAdd",
+    "pages/ucenter/feedback/feedback",
+    "pages/ucenter/footprint/footprint",
+    "pages/ucenter/order/order",
+    "pages/ucenter/orderDetail/orderDetail",
+    "pages/ucenter/couponList/couponList",
+    "pages/ucenter/couponSelect/couponSelect",
+    "pages/ucenter/collect/collect",
+    "pages/ucenter/myevaluation/myevaluation",
+    "pages/ucenter/evaluationOrder/evaluationOrder",
+    "pages/ucenter/help/help",
+    "pages/ucenter/team/team",
+    "pages/ucenter/team/rule/rule",
+    "pages/ucenter/wallet/wallet",
+    "pages/ucenter/wallet/rechage/rechage",
+    "pages/ucenter/wallet/rule/rule",
+    "pages/ucenter/assess/assess",
+    "pages/ucenter/assess/moreAssess/moreAssess",
+    "pages/ucenter/about/about",
+    "pages/ucenter/problem/problem",
+    "pages/ucenter/problem/after/after",
+    "pages/ucenter/problem/sendtime/sendtime", 
+    "pages/ucenter/problem/cost/cost",
+    "pages/auth/login/login",
+    "pages/auth/accountLogin/accountLogin",
+    "pages/auth/register/register",
+    "pages/auth/reset/reset",
+    "pages/payResult/payResult",
+    "pages/comment/comment",
+    "pages/commentPost/commentPost",
+    "pages/topic/topic",
+    "pages/topicComment/topicComment",
+    "pages/topicDetail/topicDetail",
+    "pages/topicCommentPost/topicCommentPost",
+    "pages/brand/brand",
+    "pages/brandDetail/brandDetail",
+    "pages/search/search",
+    "pages/category/category",
+    "pages/cart/cart",
+    "pages/checkout/checkout",
+    "pages/goods/goods",
+    "pages/about/about",
+    "pages/groupon/myGroupon/myGroupon",
+    "pages/groupon/grouponDetail/grouponDetail",
+    "pages/groupon/grouponList/grouponList",
+    "pages/coupon/coupon",
+    "pages/help/help",
+    "pages/recommend/recommend",
+    "pages/evaluation/evaluation",
+    "pages/evaluation/apply/apply",
+    "pages/evaluation/timeApply/timeApply",
+    "pages/evaluation/details/details",
+    "pages/message/message",
+    "pages/message/sysmessage/sysmessage",
+    "pages/forum/forum",
+    "pages/forum/post/post",
+    "pages/forum/forumDetails/forumDetails",
+    "pages/forum/myforum/myforum"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#FFFFFF",
+    "navigationBarTitleText": "俏东东佳品商城",
+    "enablePullDownRefresh": true,
+    "navigationBarTextStyle": "black",
+    "backgroundColor": "#FFFFFF",
+    "backgroundTextStyle": "dark",
+    "navigationStyle": "custom"
+  },
+  "tabBar": {
+    "backgroundColor": "#fafafa",
+    "borderStyle": "white",
+    "selectedColor": "#AB956D",
+    "color": "#666",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "images/nav/index1.png",
+        "selectedIconPath": "images/nav/index2.png"
+      },
+      {
+        "pagePath": "pages/catalog/catalog",
+        "iconPath": "images/nav/sort1.png",
+        "selectedIconPath": "images/nav/sort2.png"
+      },
+      {
+        "pagePath": "pages/cart/cart",
+        "iconPath": "images/nav/car1.png",
+        "selectedIconPath": "images/nav/car2.png"
+      },
+      {
+        "pagePath": "pages/ucenter/index/index",
+        "iconPath": "images/nav/my1.png",
+        "selectedIconPath": "images/nav/my2.png"
+      }
+    ]
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "connectSocket": 10000,
+    "uploadFile": 10000,
+    "downloadFile": 10000
+  },
+  "usingComponents": {
+    "cu-custom": "/colorui/components/cu-custom"
+  },
+  "debug": true,
+  "sitemapLocation": "sitemap.json"
+}

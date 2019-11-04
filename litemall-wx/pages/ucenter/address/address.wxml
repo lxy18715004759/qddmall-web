@@ -1,0 +1,26 @@
+<cu-custom bgColor="bg-white" isBack="{{true}}"><view slot="backText">返回</view><view slot="content">地址管理</view></cu-custom>
+<view class="container">
+  <view class="address-list" wx:if="{{ addressList.length > 0 }}">
+    <view class="item address-item" wx:for="{{addressList}}" wx:key="id" bindtap="addressAddOrUpdate" data-address-id="{{item.id}}">
+      <view class="flex address-content">
+        <view class="address-body">
+          <view class="flex">
+            <view class="address-name">{{item.name}}</view>
+            <view class="address-tel">{{item.tel}}</view>
+          </view>
+          <view class="address-detail">{{item.province}}{{item.city}}{{item.county}}{{addressDetail}}</view>
+        </view>
+        <view class="address-del">
+           <image class="del-img" catchtap="deleteAddress" data-address-id="{{item.id}}" src="/static/images/del-address.png"></image>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="empty-view" wx:if="{{ addressList.length <= 0 }}">
+    <image class="icon" src="http://yanxuan.nosdn.127.net/hxm/yanxuan-wap/p/20161201/style/img/icon-normal/noAddress-26d570cefa.png"></image>
+    <text class="text">收货地址在哪里</text>
+  </view>
+  <view class="forum-btn" bindtap="addressAddOrUpdate" data-address-id="0">
+  <button class="new-btn">+新增地址</button>
+</view>
+</view>

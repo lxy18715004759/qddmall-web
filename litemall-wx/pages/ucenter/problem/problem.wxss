@@ -1,0 +1,9 @@
+/* pages/ucenter/about/about.wxss */
+.flex{
+  margin-top: 10px;
+  margin-left: 10px;
+}
+.img{
+  width: 20px;
+  height: 20px;
+}

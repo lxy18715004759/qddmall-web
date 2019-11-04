@@ -1,0 +1,82 @@
+<!--pages/shiyong/shiyong.wxml-->
+<!-- 商品卡片 -->
+<cu-custom bgColor="bg-white" isBack="{{true}}"><view slot="backText">返回</view><view slot="content">我的评鉴</view></cu-custom>
+<scroll-view scroll-x class="bg-white nav">
+  <view class="flex text-center">
+    <view class="cu-item flex-sub {{0==TabCur?'text-color cur':''}}"  bindtap="tabSelect" data-id="0">
+     审核中
+    </view>
+    <view class="cu-item flex-sub {{1==TabCur?'text-color cur':''}}"  bindtap="tabSelect" data-id="1">
+     审核结束
+    </view>
+  </view>
+</scroll-view>
+<!-- ------ -->
+<block wx:if="{{TabCur==0}}">
+<view wx:for-items="{{myPageList}}" wx:key="{{index}}" bindtap="toDetailsTap" data-id="{{item.goodId}}">
+<view class="flex  align-start card-box shadow-blur">
+  <view class="">
+  <image class="card-img" src="{{item.picUrl}}"></image>
+  </view>
+  <view class=" padding-sm margin-xs">
+  <view class="examine">申请审核中</view>
+  <view class="grid col-1">
+    <view class=" card-title">{{item.goodName}}</view>
+    <view class=" card-text">{{item.brief}}</view>
+    <!-- <view class=" card-pic">
+    <text class="pic-color">￥{{item.retailPrice}} </text>
+    <text class="nopic-color"> ￥{{item.counterPrice}}</text>
+    </view> -->
+    <view class=" justify-between">
+        <view class="radius card-stock">
+       提供量：{{item.goodCount}}件
+        </view>
+         <view class="radius card-stock">
+       已申请人数：{{item.applyCount}}人
+        </view>
+         <view class="radius card-stock">
+      截止日期：{{item.endTime}}
+        </view>
+    </view>
+    </view>
+  </view>
+</view>
+</view>
+</block>
+<block wx:if="{{TabCur==1}}">
+<view wx:for-items="{{endPageList}}" wx:key="{{index}}">
+<view class="flex  align-start card-box">
+  <view class="" bindtap="toDetailsTap" data-id="{{item.goodId}}">
+  <image class="card-img" src="{{item.picUrl}}"></image>
+  </view>
+  <view class=" padding-sm margin-xs">
+  <view class="examine">申请成功</view>
+  <view class="grid col-1">
+    <view class=" card-title">{{item.goodName}}</view>
+    <view class=" card-text">{{item.brief}}</view>
+    <!-- <view class=" card-pic">
+    <text class="pic-color">￥{{item.retailPrice}} </text>
+    <text class="nopic-color"> ￥{{item.counterPrice}}</text>
+    </view> -->
+    <view class="flex justify-between">
+    <view>
+       <view class="radius card-stock">
+       提供量：{{item.goodCount}}件
+        </view>
+         <view class="radius card-stock">
+       已申请人数：{{item.applyCount}}人
+        </view>
+         <view class="radius card-stock">
+      截止日期：{{item.endTime}}
+        </view>
+    </view> 
+        <view class="radius card-but">
+          <button class="cu-btn round btn-color" bindtap="goEvaluationOrder" data-id="{{item.id}}">查看</button>
+        </view>
+    </view>
+    </view>
+  </view>
+</view>
+</view>
+</block>
+<view class="footer"></view>
